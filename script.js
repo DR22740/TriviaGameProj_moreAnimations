@@ -93,7 +93,7 @@ let setOfAnswers = [];
 
 function randomizeSetOfAnswers(loA){
     let shuffledArr = loA.sort(() => Math.random() - 0.5);
-    console.log(shuffledArr);
+    
     return shuffledArr;
 }
 
@@ -135,7 +135,7 @@ async function fetchQuestions(difficulty, category, type) {
   let selectedCategory = categoryNum;
   secelectedType = document.getElementById('type').value;
   const apiUrl = generateTriviaApiUrl(selectedDifficulty, selectedCategory, secelectedType);
-  console.log(apiUrl);
+
   const response = await fetch(apiUrl);
 
   if (!response.ok) {
@@ -248,7 +248,7 @@ function checkAnswer(selectedAnswer) {
     choiceDButton.disabled = true;
 
     
-console.log("running this function");
+
 
 
     trueButton.disabled = true;
@@ -298,7 +298,7 @@ console.log("running this function");
            }else if(HP>0){
        
         HP = HP - 1;
-        console.log(HP);
+        
          currentQuestionIndex = addindex(currentQuestionIndex);
          let newCorectAnswer = decodeHtmlEntities(correctAnswer);
         resultElement.style.color = 'red';
@@ -320,8 +320,7 @@ console.log("running this function");
 
 function continueGame() {
     
-    console.log("here is the current index: "+currentQuestionIndex);
-    console.log("here is the current HP: "+HP);
+   
     trueButton.disabled = false;
     falseButton.disabled = false;
     choiceAButton.disabled = false;
@@ -348,7 +347,7 @@ function isItTheLastQuestion(L){
     }
 }
 function addindex(currentQuestionIndex){
-    console.log('running addindexFunction!!! ');
+    
     if (currentQuestionIndex == 9){
         localStorage.setItem("inputValue", Scoree);
         console.log("you win you win!!!")
