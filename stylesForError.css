@@ -1,0 +1,61 @@
+/* stylesForError.css */
+
+/* Body styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif; /* Nicer and formal font */
+    font-weight: 300; /* Light font weight */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #555555, #2e0854); /* Grey to dark purple gradient */
+    color: #ffffff; /* Text color */
+}
+
+/* Error message container styles */
+.MainMessage-container {
+    text-align: center;
+    background: linear-gradient(to bottom, #444444, #20053d); /* Darker gradient background */
+    padding: 30px; /* Increased padding for more distance */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+}
+
+/* Error message text styles */
+.error1-text {
+    font-size: 24px;
+    margin-bottom: 20px; /* Increased margin for more distance */
+    color: #999999; /* Light grey text color */
+}
+
+.error2-text {
+    font-size: 20px;
+    margin-bottom: 20px; /* Increased margin for more distance */
+    color: #999999; /* Light grey text color */
+}
+
+.error3-text {
+    font-size: 16px;
+    margin-top: 20px; /* Increased margin for more distance */
+    color: #999999; /* Light grey text color */
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    background-color: #6c3483; /* Dark violet button color */
+    color: #ffffff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    margin-top: 20px; /* Increased margin for more distance */
+}
+
+button:hover {
+    background-color: #512e61; /* Lighter violet button color on hover */
+}
+
+/* Rest of your CSS for error page */

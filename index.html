@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trivia game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="question-container">
+        <div class="controls">
+            <button id="start-game-btn">Start Game</button>
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy (score +1)</option>
+                <option value="medium">Medium (score +2)</option>
+                <option value="hard">Hard (score +3)</option>
+            </select>
+
+            <label for="category">Category:</label>
+            <select id="category">
+                <!-- <option value="General Knowledge" disabled selected>Select a category</option> -->
+                <!-- Add more placeholder options as needed -->
+            </select>
+            <label for="type">Type:</label>
+            <select id="type">
+               <option value="boolean">True or False</option>
+                <option value="multiple">Multiple Choice</option>
+                
+            </select>
+        </div>
+        <div id="typed-strings">
+            <p class="question"></p>
+          </div>
+          <span id="typed"></span>
+          
+          
+    <div class="fade-out-element">
+        <div class="button-container">
+    <button id="choice-a-btn" style="display: none">Choice A</button>
+    <button id="choice-b-btn" style="display: none">Choice B</button>
+         </div> 
+    <div class="button-container">
+
+    <button id="choice-c-btn" style="display: none">Choice C</button>
+    <button id="choice-d-btn" style="display: none">Choice D</button>
+         <button id="true-btn" style="display: none">True</button>
+        <button id="false-btn" style="display: none">False</button>
+         </div> 
+        </div>
+        <h1 class="result"></h1>
+        <h2 class="gameResult"></h2>
+        <h1 id="Health">Health: 3</h1>
+        <h4 id="Score">Score: 0</h6>
+        <button id="continue-btn" style="display: none">Continue</button>
+        <button id="reset-btn" style="display: none">Restart</button>
+
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* Reset default margin and padding */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #3498db, #e74c3c, #9b59b6, #f1c40f);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    overflow: hidden;
+    font-size: 16px; /* Default font size */
+}
+
+/* Keyframes for the background gradient animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Container for the "You Win" message and button */
+.win-container {
+    text-align: center;
+    background-size: 200% 200%;
+    padding: 1.25rem; /* Equivalent to 20px */
+    border-radius: 0.625rem; /* Equivalent to 10px */
+    color: #ffffff;
+    width: 80%;
+    max-width: 37.5rem; /* Equivalent to 600px */
+}
+
+/* Style for the "You Win" message text */
+.win-text {
+    font-size: 3rem; /* Equivalent to 48px */
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    animation: scaleAnimation 5s forwards; /* Use "forwards" to keep the final state */
+    transform-origin: center; /* Set the transform origin to the center */
+}
+
+/* Keyframes for the scale animation */
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(0.2);
+    }
+    100% {
+        transform: scale(2);
+    }
+}
+/* Style for the "Restart" button */
+/* Style for the "Restart" button */
+.button-container {
+    display: flex;
+/*    flex-direction: column;*/
+    justify-content: center;
+    opacity: 0; /* Initially set opacity to 0 to make the button invisible */
+}
+
+button#return-btn {
+    padding: 10px 20px;
+    margin: 10px;
+     background: linear-gradient(45deg, #ff69b4, #ba55d3);
+    color: white;
+    border: 2px solid #9c27b0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out, border-color 0.3s ease, box-shadow 0.2s ease-in-out, opacity 2s ease 10s; /* Add opacity transition */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+button#return-btn:hover {
+    background-color: #c2185b;
+    border-color: #9c27b0;
+    transform: scale(1.05);
+    box-shadow: 0px 5px 10px rgba(74, 20, 140, 0.2);
+}
+button#score-btn {
+    padding: 10px 20px;
+    margin: 10px;
+     background: linear-gradient(45deg, #ff69b4, #ba55d3);
+    color: white;
+    border: 2px solid #9c27b0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out, border-color 0.3s ease, box-shadow 0.2s ease-in-out, opacity 2s ease 10s; /* Add opacity transition */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+button#score-btn:hover {
+    background-color: #c2185b;
+    border-color: #9c27b0;
+    transform: scale(1.05);
+    box-shadow: 0px 5px 10px rgba(74, 20, 140, 0.2);
+}
+/* Use keyframes to set opacity to 1 after 10 seconds */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+/* Apply the fade-in animation to the button after 10 seconds */
+.button-container {
+    animation: fadeIn 3s ease 3s forwards;
+}
+

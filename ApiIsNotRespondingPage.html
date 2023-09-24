@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Api error</title>
+    <link rel="stylesheet" type="text/css" href="stylesForError.css">
+</head>
+<body>
+    <div class="MainMessage-container">
+        <h1 class="error1-text">Unfortunately, the API did not respond!</h1>
+        <h2 class="error1-text">The API does not contain any questions for your request!</h2>
+        <h5 class="error1-text">Click the "Go Back" button to try a different category or type. Sorry for the inconvenience :(</h5>
+        
+        <!-- Button to go back to index.html -->
+        <button id="back-btn">Go Back</button>
+    </div>
+
+    <script>
+        // JavaScript to navigate back to index.html when the button is clicked
+        const backButton = document.getElementById('back-btn');
+        backButton.addEventListener('click', () => {
+            window.location.href = 'index.html'; // Replace 'index.html' with your actual file path
+        });
+    </script>
+</body>
+</html>

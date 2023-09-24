@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>You Win</title>
+    <link rel="stylesheet" type="text/css" href="stylesForWin.css">
+</head>
+<body>
+    <div class="win-container">
+        <h1 class="win-text">You Win!</h1>
+       
+       
+    </div>
+    <div class="win-container">
+       
+        <div class="button-container">
+            <button id="return-btn">Restart</button>
+            <br>
+            <br>
+        
+        </div>
+        <div class="button-container">
+        
+            <br>
+            <br>
+            <h3 id="scoreDisplayWin"></h3>
+        </div>
+  
+    </div>
+    
+  <script>  
+     const scoreView = document.getElementById('scoreDisplayWin');
+     let scoreFinal = localStorage.getItem('inputValue');
+     console.log(scoreFinal)
+     let scoreFinalDisplaying = `Your score is: ${scoreFinal}`
+     scoreView.innerHTML = scoreFinalDisplaying;
+      
+        // JavaScript to navigate back to index.html when the button is clicked
+        const backButton = document.getElementById('return-btn');
+        backButton.addEventListener('click', () => {
+            window.location.href = 'index.html'; 
+        });
+    </script>
+</body>
+</html>
